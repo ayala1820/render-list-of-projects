@@ -13,7 +13,7 @@ app.get('/', async (req, res) => {
     try {
         const response = await axios.get('https://api.render.com/v1/services?includePreviews=true&limit=20', {
             headers: {
-                'Authorization': `${process.env.RENDER_API_KEY}`,
+                'Authorization': `${process.env.rnd_API_KEY}`,
                 'Accept': 'application/json'
                 
             }
